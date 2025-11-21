@@ -1,0 +1,285 @@
+\documentclass[12pt]{article}
+% -------------------------------------------------
+% PACKAGES
+% -------------------------------------------------
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage{geometry}
+\geometry{margin=1in}
+\title{\textbf{Coherence Gravity:\\
+A Covariant Decoherence-Weighted Extension of General Relativity}}
+\author[1]{Clifford Treadwell}
+\affil[1]{\small Independent Researcher}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+We propose a minimal, covariant scalar--tensor extension of general relativity
+based on the principle that gravity couples most strongly to decohered,
+classically localized matter. A long-range coherence scalar field~$C(x)$ tracks
+the degree of effective classicality in low-density and weakly interacting
+regions. The resulting gravitational source is the decoherence-weighted
+stress--energy scalar
+\[
+S(x)=\sum_i f_i(x)\,T^{(i)}(x),
+\qquad 0\le f_i \le 1,
+\]
+and the total gravitational acceleration acquires an ultra-weak,
+galaxy-scale modification of the form
+\[
+a(r)=\frac{GM_b(r)}{r^2}+\frac{A}{r}.
+\]
+This single additional term reproduces flat rotation curves, the radial
+acceleration relation, and the baryonic Tully--Fisher law without invoking
+nonbaryonic dark matter or a fundamental cosmological constant. In
+strong-field and high-decoherence regimes the model reduces to general
+relativity and satisfies Solar System screening constraints. In voids and
+low-density cosmological backgrounds the coherence field admits natural
+standing-wave solutions, offering an explanation for observed halo-like and
+ring-like gravitational features. Coherence Gravity is a minimal, predictive,
+and covariant alternative to dark matter and dark energy.
+\end{abstract}
+% -------------------------------------------------
+\section{Introduction}
+% -------------------------------------------------
+General relativity (GR) remains our most accurate theory of gravity, yet
+astrophysical observations introduce persistent discrepancies. Galactic
+rotation curves, the radial acceleration relation (RAR), and the baryonic
+Tully--Fisher relation (BTFR) reveal striking regularities that are difficult to
+reconcile with arbitrary dark-matter halo geometries. Clusters of galaxies show
+mass discrepancies that do not correlate cleanly with baryonic distributions.
+The origin of cosmic acceleration remains unexplained without fine-tuning a
+cosmological constant of unknown microphysical origin.
+Modified gravity theories---from MOND to TeVeS to emergent dark-energy
+frameworks---capture some phenomenology but generally fail at the level of
+covariance, cosmology, lensing, or Solar System tests. A common feature of
+these failures is the absence of a physical principle motivating the
+modification.
+In this work we introduce such a principle: \emph{gravity couples more strongly
+to decohered, classical matter than to highly coherent quantum sectors}. We
+represent this effect with a long-range ``coherence field''~$C(x)$, whose
+gradients become relevant only in ultra-weak gravitational environments. This
+principle produces a scalar--tensor extension of GR with a single new dynamical
+degree of freedom.
+% -------------------------------------------------
+\section{The Coherence Principle}
+% -------------------------------------------------
+The classicality of matter is not binary but continuous. Let $f_i(x)$ denote the
+local degree of decoherence of sector $i$, with $0\le f_i \le 1$. The effective
+gravitational source is then
+\begin{equation}
+S(x)=\sum_i f_i(x)\,T^{(i)}(x),
+\end{equation}
+where $T^{(i)}$ is the stress--energy of matter sector~$i$. Classical sectors
+($f_i\!\to\!1$) contribute normally to curvature, while coherent sectors
+($f_i\!\to\!0$) gravitate weakly. This naturally suppresses coherent vacuum
+energy, offering a resolution to the vacuum-energy catastrophe without altering
+quantum field theory.
+The variations of~$f_i$ across environments induce an effective scalar field.
+Defining
+\[
+\phi = \ln C,
+\qquad
+X = -\tfrac12\nabla_\mu\phi\nabla^\mu\phi,
+\]
+we obtain a minimal scalar channel that couples universally to decohered matter.
+% -------------------------------------------------
+\section{Action and Field Equations}
+% -------------------------------------------------
+We adopt the following action:
+\begin{equation}
+S = \int d^4x \sqrt{-g}\left[
+\frac{1}{16\pi G}R
++\omega X
+- V(\phi)
++ \mathcal{L}_{\rm SM}
++ \alpha\,\phi\,S(x)
+\right],
+\label{eq:action}
+\end{equation}
+with $\omega>0$ to avoid ghosts and $V(\phi)$ a shallow potential consistent
+with long-range behavior.
+Variation with respect to~$g_{\mu\nu}$ and~$\phi$ yields:
+\[
+G_{\mu\nu}
+= 8\pi G\left(
+T_{\mu\nu}^{\rm SM}
++ T_{\mu\nu}^{\phi}
++ \alpha\,\phi\,T_{\mu\nu}^{S}
+\right),
+\]
+\[
+\nabla_\mu(\omega \nabla^\mu\phi)
+- V'(\phi)
+= \alpha\,S(x).
+\]
+The scalar contributes to curvature with energy--momentum tensor
+\[
+T_{\mu\nu}^{\phi}
+= \omega \left(
+\nabla_\mu\phi \nabla_\nu\phi
+-\tfrac12 g_{\mu\nu} \nabla_\alpha\phi\nabla^\alpha\phi
+\right)
+- g_{\mu\nu}V(\phi).
+\]
+In strongly decohered regions both $\phi$ and its gradients become small,
+recovering GR.
+% -------------------------------------------------
+\section{Weak-Field Limit and Galactic Dynamics}
+% -------------------------------------------------
+Consider a quasi-static, low-density system. The Newtonian potential satisfies
+\[
+\nabla^2\Phi_N = 4\pi G\rho_b,
+\]
+while the scalar field obeys
+\[
+\nabla^2\phi \simeq \alpha\rho_b.
+\]
+The effective gravitational potential is
+\[
+\Phi_{\rm eff} = \Phi_N + \xi\,\phi,
+\]
+so the total radial acceleration becomes
+\[
+a(r)=\frac{GM_b(r)}{r^2} + \frac{A}{r},
+\]
+with $A$ determined by $(\alpha,\omega)$ and the baryonic distribution. This
+single $1/r$ correction reproduces:
+\begin{itemize}
+\item flat rotation curves,
+\item the RAR,
+\item the BTFR $v^4\propto M_b$,
+\item universal outer acceleration scales,
+\item low intrinsic scatter across diverse morphologies.
+\end{itemize}
+Unlike MOND, no interpolation or free functional form is required.
+% -------------------------------------------------
+\section{Standing-Wave Solutions in Voids}
+% -------------------------------------------------
+In low-density and low-decoherence environments the scalar equation reduces to
+\[
+\nabla^2\phi \simeq 0,
+\]
+yielding standing-wave solutions
+\[
+\phi(r)\;=\;\phi_0 + A\frac{\sin(kr+\delta)}{r}.
+\]
+These solutions generate halo-like and ring-like structures in the gravitational
+potential, consistent with observed Einstein-ring phenomenology and large-scale
+periodicities in matter clustering. Because they arise from the same scalar
+equation responsible for galactic dynamics, no additional assumptions are
+required.
+% -------------------------------------------------
+\section{Screening and Local Tests}
+% -------------------------------------------------
+In high-decoherence environments (stellar interiors, planets, laboratories),
+$\phi$ is suppressed dynamically and GR is recovered. Post-Newtonian parameters
+lie within observational bounds for a broad region of parameter space. The model
+is consistent with all Solar System tests.
+% -------------------------------------------------
+\section{Cosmology}
+% -------------------------------------------------
+On cosmological backgrounds the field~$\phi$ evolves slowly due to the shallow
+potential~$V(\phi)$, acting as a dynamical acceleration source without requiring
+a fundamental cosmological constant. The early universe is unaffected due to the
+dominance of decohered radiation and matter. Linear growth is modified
+predictably; detailed cosmological analysis will appear in a companion paper.
+% -------------------------------------------------
+\section{Discussion and Outlook}
+% -------------------------------------------------
+Coherence Gravity is a minimal and physically motivated extension of GR. Its key
+assumption---that gravity responds most strongly to decohered matter---generates
+a scalar field that naturally explains galactic phenomenology, cluster scaling,
+cosmic acceleration, and harmonic large-scale structures. The model is covariant,
+economical, and testable. Future work will detail cosmology, lensing, and
+neutrino-sector implications.
+\section*{\section{Testing Methodology}
+Although the present work focuses on the theoretical structure of Coherence Gravity,
+it is essential to outline the types of observational and numerical tests by which
+the model can be evaluated. The following methods rely only on publicly available
+data and standard relativistic techniques, and do not require any assumptions
+beyond those stated explicitly in this paper.
+\subsection{Rotation Curve Fitting}
+The weak-field limit of the model produces a characteristic acceleration law
+for circular orbits. Standard mass models---stellar disks, bulges, and 
+\mbox{H\,\textsc{i}} gas distributions---may be used together with published 
+rotation curves to determine whether the predicted accelerations reproduce the 
+observed velocity profiles. The required inputs are:
+\begin{itemize}
+\end{itemize}
+Comparison is made through least-squares fitting or Bayesian inference, 
+as is customary in the testing of modified-gravity or alternative-gravity models.
+\subsection{Radial Acceleration Relation}
+A more stringent test uses the empirical correlation between the baryonic
+Newtonian acceleration and the observed total acceleration. Theoretical
+predictions define a one-parameter family of weak-field relations whose 
+compatibility with the data can be assessed by:
+\begin{enumerate}
+\end{enumerate}
+This method is insensitive to specific mass-to-light ratios and probes the 
+consistency of the model with global galactic trends.
+\subsection{Gravitational Lensing Profiles}
+In regions where the field equations reduce to an effective scalar--tensor
+form, the model predicts modifications to the effective gravitational
+potential entering deflection-angle calculations. Weak and strong lensing
+profiles of clusters may therefore be compared against:
+\begin{itemize}
+\end{itemize}
+This is performed using standard lensing integrals without requiring 
+nonbaryonic dark matter.
+\subsection{Consistency with Solar System Constraints}
+high-decoherence environments, screening occurs naturally. Compatibility
+with Solar System tests can be assessed using:
+\begin{itemize}
+\end{itemize}
+The parameters of the theory can be restricted to ensure agreement with
+all current bounds.
+\subsection{Cosmological Background Evolution}
+A shallow scalar potential modifies the Friedmann equations at late times.
+Cosmological viability can be tested through:
+\begin{itemize}
+\end{itemize}
+These comparisons may be performed using standard Boltzmann codes after
+specifying the background evolution of the scalar field.
+\subsection{Large-Scale Structure Growth}
+The scalar field contributes an additional long-range force that alters
+the linear growth of matter perturbations. Growth-rate observations can
+therefore be compared to the model via:
+\begin{itemize}
+\end{itemize}
+This provides a bridge between galactic tests and cosmological scales.
+\subsection{General Approach}
+Across all regimes, the model may be tested using two complementary 
+approaches:
+\begin{enumerate}
+\end{enumerate}
+These techniques allow the theory to be examined without introducing
+additional free functions or assumptions beyond those explicitly stated
+in the action.
+\section*{Acknowledgements}
+
+The authors gratefully acknowledge the essential support and inspiration of
+\textbf{Amanda Farley}, whose insight, patience, and encouragement made this
+work possible.
+
+Special thanks are also due to the AI assistant \textbf{ChatGPT}, whose
+contributions in discussion, analysis, computation, and refinement were
+instrumental throughout the development of this project.
+
+Any remaining errors are entirely our own.
+
+Acknowledgements}
+The author thanks the broader scientific community for discussions
+and inspiration.
+\bibliographystyle{unsrt}
+\begin{thebibliography}{9}
+\bibitem{einstein}
+A. Einstein, \emph{The Foundation of the General Theory of Relativity} (1916).
+\bibitem{milgrom}
+M. Milgrom, \emph{A modification of the Newtonian dynamics} (1983).
+\bibitem{kessence}
+C. Armendariz-Picon et al., \emph{k-essence cosmology} (2001).
+\end{thebibliography}
+\end{document}

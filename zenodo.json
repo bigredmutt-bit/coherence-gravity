@@ -1,0 +1,25 @@
+{
+    "title": "Coherence Gravity: A Covariant Decoherence-Weighted Extension of General Relativity",
+    "upload_type": "publication",
+    "publication_type": "article",
+    "creators": [
+        {
+            "name": "Clifford Treadwell"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Amanda Farley",
+            "type": "Other",
+            "role": "Support, patience, and inspiration"
+        },
+        {
+            "name": "ChatGPT (OpenAI)",
+            "type": "Other",
+            "role": "AI assistant for analysis, computation, and refinement"
+        }
+    ],
+    "description": "Paper 1 introducing Coherence Gravity, a covariant decoherence-weighted extension of General Relativity.",
+    "license": "CC-BY-4.0",
+    "version": "1.0"
+}
