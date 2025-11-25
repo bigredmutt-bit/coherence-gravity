@@ -1,0 +1,135 @@
+\section{Relation to MOND Interpolation Functions}
+\label{sec:mond_mu}
+
+Modified Newtonian Dynamics (MOND) is commonly expressed in terms of an
+interpolation function $\mu(x)$ that relates the total acceleration $a$ to the
+Newtonian prediction $a_{\rm N}$ according to
+\begin{equation}
+a\,\mu\!\left(\frac{a}{a_0}\right) = a_{\rm N},
+\label{eq:mond_mu_def}
+\end{equation}
+or, equivalently, in terms of a $\nu$-function defined by
+\begin{equation}
+a = \nu\!\left(\frac{a_{\rm N}}{a_0}\right)a_{\rm N},
+\qquad
+y \equiv \frac{a_{\rm N}}{a_0}.
+\label{eq:mond_nu_def}
+\end{equation}
+The empirical success of MOND at galactic scales is encoded in the limiting
+behavior
+\begin{equation}
+\mu(x)\to 1 \quad (x\gg 1),
+\qquad
+\mu(x)\to x \quad (x\ll 1),
+\label{eq:mond_limits}
+\end{equation}
+or, equivalently,
+\begin{equation}
+\nu(y)\to 1 \quad (y\gg 1),
+\qquad
+\nu(y)\to y^{-1/2} \quad (y\ll 1).
+\end{equation}
+In this section we show that the coherence-field model reproduces these limits
+and closely tracks standard MOND interpolation functions across the full SPARC
+acceleration range.
+
+\subsection{Effective Interpolation Function from the Coherence Field}
+
+In the coherence-field framework the total acceleration is
+\begin{equation}
+a_{\rm tot}(r)
+= a_{\rm N}(r) + a_{\rm coh}(r),
+\qquad
+a_{\rm N}(r) = \frac{GM_{\rm bar}(r)}{r^2},
+\end{equation}
+with the deep-regime coherence acceleration given by
+\begin{equation}
+a_{\rm coh}(r)
+= \frac{\sqrt{G M a_0}}{r},
+\end{equation}
+as derived in the preceding sections. For a given baryonic mass profile, this
+defines an \emph{effective} MOND $\nu$-function:
+\begin{equation}
+a_{\rm tot}
+= \nu_{\rm eff}(y)\,a_{\rm N},
+\qquad
+y \equiv \frac{a_{\rm N}}{a_0}.
+\label{eq:nu_eff_def}
+\end{equation}
+
+In the regime where the scalar tail contributes significantly but the Newtonian
+term is not negligible, the coherence-field solution is well approximated by
+\begin{equation}
+a_{\rm tot}(r)
+\simeq a_{\rm N}(r)
++ \sqrt{a_{\rm N}(r)a_0},
+\label{eq:a_tot_approx}
+\end{equation}
+implying
+\begin{equation}
+\nu_{\rm eff}(y)
+= 1 + y^{-1/2}.
+\label{eq:nu_eff_approx}
+\end{equation}
+This form is not imposed; it emerges from the nonlinear scalar flux relation
+and the B2/D2 dynamics.
+
+\subsection{Limiting Behavior and Comparison with Standard MOND Forms}
+
+The effective coherence-field interpolation function satisfies the MOND limits:
+\begin{align}
+y \gg 1:\quad
+&\nu_{\rm eff}(y) = 1 + y^{-1/2} \simeq 1,
+\qquad
+a_{\rm tot}\simeq a_{\rm N},
+\\[4pt]
+y \ll 1:\quad
+&\nu_{\rm eff}(y) \sim y^{-1/2},
+\qquad
+a_{\rm tot} \simeq \sqrt{a_0\,a_{\rm N}},
+\end{align}
+reproducing the deep-MOND scaling.  
+The corresponding effective $\mu$-function,
+\begin{equation}
+\mu_{\rm eff}(x)
+= \frac{a_{\rm N}}{a_{\rm tot}}
+= \frac{1}{\nu_{\rm eff}(y)},
+\qquad
+x=\frac{a_{\rm tot}}{a_0},
+\end{equation}
+satisfies the standard limits~\eqref{eq:mond_limits}:
+\begin{equation}
+\mu_{\rm eff}(x)\to 1 \quad (x\gg 1),
+\qquad
+\mu_{\rm eff}(x)\to x \quad (x\ll 1).
+\end{equation}
+
+Common MOND choices include
+\begin{equation}
+\mu_{\rm simple}(x) = \frac{x}{1+x},
+\qquad
+\mu_{\rm standard}(x) = \frac{x}{\sqrt{1+x^2}}.
+\end{equation}
+Across the SPARC acceleration range,
+$\nu_{\rm eff}(y)=1+y^{-1/2}$ is numerically very close to these forms,
+consistent with the small log-RMS scatter ($\simeq 0.08$ dex) in
+Fig.~\ref{fig:nu_vs_aN}.  
+The coherence-field model therefore matches both the asymptotic limits and the
+empirical shape of the MOND interpolation favored by SPARC.
+
+\subsection{Conceptual Difference from MOND}
+
+Despite the close phenomenology, the underlying mechanisms differ
+fundamentally:
+\begin{enumerate}
+\item In MOND, the $\mu(x)$ function is an \emph{input}—a phenomenological
+interpolating rule built into a modified Poisson equation.
+\item In the coherence-field theory, the effective interpolation emerges
+\emph{dynamically} from a covariant Lagrangian with a single scalar degree of
+freedom and a quartic gradient term. The interpolation function is a derived
+quantity reflecting the scalar's nonlinear response to baryonic sources.
+\end{enumerate}
+This conceptual distinction is crucial: the coherence-field model provides a
+field-theoretic origin for MOND-like behavior, embedding galactic phenomenology
+within a unified relativistic and cosmological framework.
+

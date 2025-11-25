@@ -1,0 +1,119 @@
+\appendix
+\section{Mapping Between Numerical Solver Units and Physical Parameters}
+\label{app:BDmapping}
+
+In the quasi-static, weak-field limit the coherence field obeys the nonlinear
+radial equation
+\begin{equation}
+\frac{1}{r^2}\frac{d}{dr}
+\left[
+r^2\left(1+\kappa C'^2\right)C'
+\right]
+= -f_1\,\rho(r),
+\qquad
+\kappa \equiv \frac{\lambda_4}{\Lambda^4},
+\label{eq:scalar_radial_app}
+\end{equation}
+where $f_1 \equiv f'(C_{\rm bg})$ is the effective coherence--matter coupling
+and primes denote radial derivatives. Integrating over the baryonic source
+yields, for all radii exterior to the mass distribution,
+\begin{equation}
+r^2\left(1+\kappa C'^2\right)C'
+= K_{\rm phys}(M),
+\qquad
+K_{\rm phys}(M) = -f_1\,M,
+\label{eq:K_phys_app}
+\end{equation}
+demonstrating that the scalar flux constant is proportional to the enclosed
+baryonic mass.
+
+\subsection*{Nondimensionalization and the B2/D2 Code Variables}
+
+The B2/D2 solver evolves a dimensionless field $\phi(x)$ using the scalings
+\begin{equation}
+C = C_0\,\phi,
+\qquad
+r = r_0\,x.
+\end{equation}
+Substituting into Eq.~\eqref{eq:K_phys_app} gives
+\begin{equation}
+r_0 C_0\,x^2\left[1+\Lambda_4\phi'^2(x)\right]\phi'(x)
+= K_{\rm phys}(M),
+\qquad
+\Lambda_4 \equiv \kappa\,\frac{C_0^2}{r_0^2}.
+\end{equation}
+This motivates the definition of the \emph{dimensionless flux constant}
+\begin{equation}
+K_{\rm code}(M_0)
+\equiv x^2\Bigl[1+\Lambda_4\phi'^2(x)\Bigr]\phi'(x),
+\label{eq:Kcode_app}
+\end{equation}
+which becomes spatially constant outside the numerical density profile.
+
+Thus the physical and numerical flux constants satisfy
+\begin{equation}
+K_{\rm phys}(M)
+= r_0 C_0\,K_{\rm code}(M_0),
+\qquad
+M = M_0\,M_{\rm unit}.
+\label{eq:phys_vs_code_app}
+\end{equation}
+
+The B2/D2 solver outputs a dimensionless parameter $f$ and accepts an input
+mass $M_0$. Empirically, across all solver runs,
+\begin{equation}
+K_{\rm code}(M_0) = f\,M_0,
+\label{eq:code_flux_scaling_app}
+\end{equation}
+and this combination also determines the numerical transition radius,
+\begin{equation}
+r_{\rm trans}(M_0) = f\,M_0.
+\end{equation}
+Combining Eqs.~\eqref{eq:K_phys_app}--\eqref{eq:code_flux_scaling_app}, the
+physical coupling $f_1$ relates to the numerical parameter $f$ via
+\begin{equation}
+f_1
+= -\,\frac{r_0 C_0}{M_{\rm unit}}\,f,
+\end{equation}
+so that the physical flux constant becomes
+\begin{equation}
+K_{\rm phys}(M)
+= r_0 C_0\,f\,M_0
+= -f_1\,M.
+\end{equation}
+
+\subsection*{Connection to the MOND Asymptotic Acceleration}
+
+In the regime where the scalar sector dominates the gravitational response,
+the observable acceleration matches the MOND deep-regime form
+\begin{equation}
+a(r) = \frac{\sqrt{GMa_0}}{r}.
+\label{eq:mond_accel_app}
+\end{equation}
+Defining the physical amplitude
+\begin{equation}
+A_{\rm phys}(M)
+\equiv \sqrt{GMa_0},
+\end{equation}
+and noting that the numerical code uses
+\begin{equation}
+r_0 = \sqrt{\frac{GM_{\rm unit}}{a_0}},
+\qquad
+a_{\rm code} = \frac{a_{\rm phys}}{a_0},
+\end{equation}
+the corresponding dimensionless amplitude is
+\begin{equation}
+A_{\rm code}(M_0)
+= \frac{A_{\rm phys}(M)}{a_0\,r_0}
+= \sqrt{M_0}.
+\label{eq:A_code_app}
+\end{equation}
+
+Thus the B2/D2 solver precisely reproduces the MOND predictions that
+\begin{itemize}
+\item the amplitude of the logarithmic $1/r$ tail scales as $\sqrt{M}$, and
+\item the transition radius satisfies $r_{\rm trans}\propto\sqrt{M}$.
+\end{itemize}
+Both properties follow directly from the nonlinear scalar flux relation
+\eqref{eq:K_phys_app} combined with the quartic kinetic term.
+

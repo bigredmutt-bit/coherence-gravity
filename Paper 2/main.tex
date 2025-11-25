@@ -1,0 +1,100 @@
+% main.tex
+\documentclass[12pt,a4paper]{article}
+
+% Encoding / fonts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Math + physics
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+
+% Figures, colors, etc.
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% Better refs / links
+\usepackage[hidelinks]{hyperref}
+\usepackage{cite}
+
+% For nice spacing
+\usepackage{microtype}
+
+% ----------------------------------------------------------------------
+% Title / author info
+% ----------------------------------------------------------------------
+\title{Coherence-Field Gravity:\\
+A Scalar-Field Alternative to Dark Matter and Dark Energy}
+
+\author{Clifford Treadwell}
+\date{\today}  % or hard-code a date if you prefer
+
+% ----------------------------------------------------------------------
+\begin{document}
+% ----------------------------------------------------------------------
+
+\maketitle
+
+% ----------------------------------------------------------------------
+% Abstract
+% ----------------------------------------------------------------------
+% Assumes Abstract.tex contains \begin{abstract}...\end{abstract}
+\input{Abstract}
+
+% ----------------------------------------------------------------------
+% Main text
+% ----------------------------------------------------------------------
+
+\input{Introduction}
+\input{Lagrangian}
+
+% Deep-regime behavior and mapping
+% (rename your file to e.g. DeepRegime.tex or adjust the line below)
+\input{DeepRegime}
+
+% SPARC fits and a0 determination
+\input{SPARC}
+
+% Relation to MOND interpolation functions
+\input{MOND_Interpolation}
+
+% Cosmology and FRW dynamics
+\input{Cosmology_FRW}
+
+% Structure formation and CMB predictions
+\input{Structure_CMB}
+
+% Gravitational lensing
+\input{Lensing}
+
+% Cluster-scale dynamics and hydrostatic equilibrium
+\input{Cluster_Dynamics}
+
+% Unified discussion and synthesis
+\input{Discussion}
+
+% Conclusion
+\input{Conclusion}
+
+% ----------------------------------------------------------------------
+% Appendices
+% ----------------------------------------------------------------------
+\appendix
+
+% Appendix A — Mapping between the B2D2 solver and the analytic mass scaling
+\input{AppendixA}
+
+% Add more appendices here as needed:
+% \input{AppendixB}
+% \input{AppendixC}
+
+% ----------------------------------------------------------------------
+% Bibliography
+% ----------------------------------------------------------------------
+% You can swap 'refs' for whatever your .bib file is called.
+\bibliographystyle{unsrt}
+\bibliography{refs}
+
+% ----------------------------------------------------------------------
+\end{document}
+

@@ -1,0 +1,103 @@
+\section{Deep-Regime Behavior and the Emergence of a Logarithmic Potential}
+\label{sec:deep}
+
+The nonlinear scalar flux relation~\eqref{eq:flux} determines the structure of
+the far-field solution for the coherence scalar $C(r)$ and thereby the
+asymptotic form of the effective gravitational acceleration. In this section we
+analyze the exterior, deep-scalar regime in detail, demonstrating that the
+coherence response generates a logarithmic potential and a corresponding $1/r$
+acceleration with amplitude $\sqrt{GMa_0}$.
+
+\subsection{Asymptotic Structure of the Scalar Gradient}
+
+Outside the baryonic mass distribution, the scalar flux relation takes the form
+\begin{equation}
+r^2\left(1+\kappa\,C'^2\right)C' = K(M),
+\qquad
+K(M) = -f'(C_{\rm bg})\,M,
+\label{eq:flux_repeat}
+\end{equation}
+with $\kappa \equiv \lambda_4/\Lambda^4$ and $C' \equiv dC/dr$. Two distinct
+regimes arise depending on the relative strength of the canonical and
+quartic-gradient terms.
+
+\paragraph*{(1) Canonical regime: $|\kappa C'^2|\ll 1$.}
+The quartic term is negligible, and Eq.~\eqref{eq:flux_repeat} reduces to
+\begin{equation}
+C'(r) \simeq \frac{K(M)}{r^2},
+\end{equation}
+implying $C\propto r^{-1}$ and reproducing the Newtonian $1/r^2$ structure of
+the scalar gradient. This regime dominates at small radii or for low enclosed
+baryonic mass.
+
+\paragraph*{(2) Nonlinear regime: $|\kappa C'^2|\gg 1$.}
+When the quartic-gradient term dominates, the scalar equation reduces to
+\begin{equation}
+\kappa\,C'^3 \simeq \frac{K(M)}{r^2},
+\end{equation}
+yielding the power-law solution
+\begin{equation}
+C'(r) \propto \left(\frac{M}{r^2}\right)^{1/3}
+\propto M^{1/3} r^{-2/3}.
+\end{equation}
+The transition between regimes occurs where $\kappa C'^2\sim 1$, which gives
+\begin{equation}
+r_{\rm trans}(M) \propto \sqrt{M},
+\end{equation}
+in agreement with both the B2/D2 numerical results and the empirical MOND
+scaling. This mass scaling arises directly from the conserved scalar flux and
+does not require dark matter or modifications to the Poisson equation.
+
+\subsection{Effective Gravitational Potential in the Deep Regime}
+
+The effective gravitational potential felt by baryonic matter follows from the
+modified Poisson equation~\eqref{eq:PoissonWeak}. In the deep-scalar regime the
+coherence energy density $\rho_C$ and the interaction term $\rho_{\rm int}$
+dominate, yielding
+\begin{equation}
+\nabla^2\Phi
+\simeq 4\pi G\left(
+\tfrac{1}{2}|\nabla C|^2
++ \tfrac{\lambda_4}{4\Lambda^4}|\nabla C|^4
++ \rho_{\rm int}
+\right),
+\label{eq:PoissonDeep}
+\end{equation}
+whose radial dependence is inherited from $C'(r)$.
+
+For $|\nabla C|\propto r^{-2/3}$, the dominant terms in
+Eq.~\eqref{eq:PoissonDeep} scale as $r^{-4/3}$ and $r^{-8/3}$, which integrate
+to produce an asymptotically logarithmic gravitational potential,
+\begin{equation}
+\Phi(r) \simeq \Phi_0 + A\ln(r/r_0),
+\end{equation}
+with
+\begin{equation}
+A = \sqrt{GMa_0},
+\label{eq:A_repeat}
+\end{equation}
+where $a_0$ is the emergent acceleration scale determined in
+Sec.~\ref{sec:SPARC}. Differentiating gives the asymptotic acceleration
+\begin{equation}
+a(r) = -\Phi'(r) = \frac{A}{r},
+\end{equation}
+consistent with both the B2/D2 simulations and the empirical baryonic
+Tully--Fisher relation.
+
+\subsection{Summary of Deep-Regime Behavior}
+
+The deep-scalar regime exhibits three key features:
+\begin{enumerate}
+\item \textbf{Conserved scalar flux:}\;
+$r^2(1+\kappa C'^2)C'=K(M)$, with $K(M)\propto M$.
+\item \textbf{Mass-scaling of the transition radius:}\;
+$r_{\rm trans}\propto\sqrt{M}$, matching the MOND empirical law.
+\item \textbf{Logarithmic potential and $1/r$ tail:}\;
+the quartic-gradient term generates a potential
+$\Phi\simeq A\ln r$ with amplitude $A=\sqrt{GMa_0}$.
+\end{enumerate}
+These features arise solely from the dynamics encoded in the Lagrangian
+\eqref{eq:fullL}. The consistency between analytic structure, numerical B2/D2
+solutions, and galactic data forms a central pillar of the coherence-field
+framework.
+

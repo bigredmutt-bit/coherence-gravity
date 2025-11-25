@@ -1,0 +1,134 @@
+\section{The Coherence--Field Lagrangian}
+\label{sec:lagrangian}
+
+The dynamics of the metric $g_{\mu\nu}$ and the coherence scalar field $C(x)$
+are determined by the covariant action
+\begin{equation}
+S = \int d^4x\,\sqrt{-g}\left[
+\frac{M_{\rm Pl}^2}{2}R
+-\frac{1}{2}(\nabla C)^2
+-\frac{\lambda_4}{4\Lambda^4}\!\left[(\nabla C)^2\right]^2
+- V(C)
+- f(C)\,T
++ \mathcal{L}_{\rm m}(\psi_i,g_{\mu\nu})
+\right].
+\label{eq:fullL}
+\end{equation}
+The scalar $C$ represents the coherence response of decohered (effectively
+classical) matter and fields, and it couples to the trace of the matter
+stress--energy tensor $T$ through the function $f(C)$. The quartic-gradient
+term, parametrized by $\lambda_4/\Lambda^4$, is the unique second-order scalar
+operator that survives weak-field consistency tests and produces the required
+nonlinear scaling on galactic and cluster scales.
+
+\subsection{Field Equations}
+
+Variation with respect to $C$ yields the scalar equation of motion
+\begin{equation}
+\nabla_\mu\!\left[
+\Bigl(1 + \frac{\lambda_4}{\Lambda^4}(\nabla C)^2\Bigr)\nabla^\mu C
+\right]
+- V'(C)
+- f'(C)\,T
+= 0,
+\label{eq:scalarEOM}
+\end{equation}
+where $(\nabla C)^2 = g^{\mu\nu}\nabla_\mu C \nabla_\nu C$. The quartic term
+introduces a nonlinear dependence on $(\nabla C)^2$, analogous to $X^2$
+operators in k-essence theories but with a specific sign and coefficient chosen
+to reproduce the observed galactic phenomenology.
+
+Varying the action with respect to $g^{\mu\nu}$ produces the Einstein equations
+\begin{equation}
+M_{\rm Pl}^2\,G_{\mu\nu}
+= T^{(m)}_{\mu\nu}
++ T^{(C)}_{\mu\nu}
++ T^{(\mathrm{int})}_{\mu\nu},
+\label{eq:EinsteinFull}
+\end{equation}
+where $T^{(m)}_{\mu\nu}$ is the matter stress--energy tensor,
+\begin{equation}
+T^{(C)}_{\mu\nu}
+=
+\Bigl(-\tfrac{1}{2}-\tfrac{\lambda_4}{2\Lambda^4} X\Bigr)
+\nabla_\mu C\,\nabla_\nu C
++ g_{\mu\nu}\left[
+\tfrac{1}{2}X
++ \tfrac{\lambda_4}{4\Lambda^4}X^2
++ V(C)
+\right],
+\qquad 
+X \equiv (\nabla C)^2,
+\end{equation}
+and $T^{(\mathrm{int})}_{\mu\nu}$ arises from the variation of the interaction
+term $-f(C)T$. The latter acts as an effective renormalization of the matter
+sector through the coherence coupling.
+
+\subsection{Weak-Field, Quasi-Static, Nonrelativistic Limit}
+
+For galactic systems the spacetime metric may be written as
+$ds^2 = -(1+2\Phi)\,dt^2 + (1-2\Phi)\,d\mathbf{x}^2$, with nonrelativistic
+matter ($T\simeq -\rho$) and negligible time derivatives of $C$. Under these
+conditions the scalar equation \eqref{eq:scalarEOM} becomes
+\begin{equation}
+\nabla\cdot\!\left[
+\Bigl(1+\kappa\,|\nabla C|^2\Bigr)\nabla C
+\right]
+= f'(C_{\rm bg})\,\rho,
+\qquad
+\kappa\equiv\frac{\lambda_4}{\Lambda^4},
+\label{eq:scalarWeak}
+\end{equation}
+while the Einstein equation reduces to a modified Poisson equation
+\begin{equation}
+\nabla^2\Phi =
+4\pi G\left(
+\rho
++ \tfrac{1}{2}|\nabla C|^2
++ \tfrac{\lambda_4}{4\Lambda^4}|\nabla C|^4
++ V(C)
++ \rho_{\rm int}
+\right).
+\label{eq:PoissonWeak}
+\end{equation}
+Equations~\eqref{eq:scalarWeak} and \eqref{eq:PoissonWeak} form a closed,
+second-order elliptic system governing the coupled metric and scalar field.
+
+\subsection{Exterior Solution and Nonlinear Flux Conservation}
+
+Outside the baryonic mass distribution ($\rho=0$), the scalar equation
+\eqref{eq:scalarWeak} integrates exactly to
+\begin{equation}
+r^2\left(1+\kappa\,C'^2\right)C' = K(M),
+\qquad
+K(M) = -f'(C_{\rm bg})\,M,
+\label{eq:flux}
+\end{equation}
+where $M$ is the enclosed baryonic mass. Equation~\eqref{eq:flux} shows that
+$M$ acts as a conserved scalar flux. The relation implies a transition between
+a canonical regime where $C'\propto r^{-2}$ and a nonlinear regime where
+$C'\propto r^{-2/3}$ when $\kappa C'^2\simeq 1$. The associated transition
+radius satisfies $r_{\rm trans}\propto \sqrt{M}$, reproducing the MOND
+mass–radius scaling.
+
+\subsection{Asymptotic Acceleration and the MOND Coefficient}
+
+In the deep-scalar regime the effective gravitational acceleration acquires an
+asymptotic logarithmic tail
+\begin{equation}
+a(r) = \frac{A}{r},
+\qquad
+A = \sqrt{GMa_0},
+\label{eq:logTail}
+\end{equation}
+with $a_0$ determined numerically from galactic fits. This reproduces the
+characteristic MOND prediction for the large-radius behavior of disk galaxies,
+while both the transition radius and amplitude arise directly from the scalar
+flux law \eqref{eq:flux}.
+
+Thus the Lagrangian \eqref{eq:fullL}, together with its field equations and
+weak-field reduction, constitutes a minimal covariant framework in which the
+nonlinear scalar response naturally recovers the empirical MOND scaling
+relations and provides a unified interpretation of galactic dynamics without
+invoking particulate dark matter.
+
