@@ -69,6 +69,36 @@ pdflatex main_merged.tex
 
 All materials required for reproducibility are included.
 
+📁 Adding Folders to This Repository
+
+Git tracks files, not empty folders. To add a new folder to the repository:
+
+1. **Create the folder and add at least one file:**
+   ```bash
+   mkdir my-new-folder
+   touch my-new-folder/README.md   # or add any file you need
+   ```
+
+2. **Stage and commit the changes:**
+   ```bash
+   git add my-new-folder/
+   git commit -m "Add my-new-folder"
+   ```
+
+3. **Push the changes to GitHub:**
+   ```bash
+   git push origin main
+   ```
+
+**Note:** If you need to keep an empty folder in your repository, add a `.gitkeep` file inside it:
+```bash
+mkdir empty-folder
+touch empty-folder/.gitkeep
+git add empty-folder/.gitkeep
+git commit -m "Add empty-folder with .gitkeep"
+git push origin main
+```
+
 🤝 Acknowledgements
 
 Special thanks to Amanda Farley for her support, patience, and inspiration throughout this work.
