@@ -1,64 +1,81 @@
 Coherence Gravity
+
 A Covariant Decoherence-Weighted Extension of General Relativity
 
-This repository contains the source files and supporting materials for the paper:
+This repository contains all source files, metadata, and supporting materials for the paper:
 
-“Coherence Gravity: A Covariant Decoherence-Weighted Extension of General Relativity.”
+Coherence Gravity: A Covariant Decoherence-Weighted Extension of General Relativity
 DOI: https://doi.org/10.5281/zenodo.17675790
 
-Coherence Gravity introduces a covariant scalar–tensor framework in which gravitational strength responds to the local degree of quantum decoherence. This modification produces a universal long-range 
-1
-/
-𝑟
-1/r correction in the ultra-weak regime while recovering standard General Relativity for fully decohered matter.
+Coherence Gravity introduces a covariant scalar–tensor framework in which gravitational strength responds to the local degree of quantum decoherence. The theory produces a universal long-range 1/r correction in the ultra-weak regime, while smoothly recovering standard General Relativity for decohered matter.
 
-This approach naturally explains:
+This framework naturally explains:
 
-flat galactic rotation curves
+Flat galactic rotation curves
 
-the radial acceleration relation (RAR)
+The radial acceleration relation (RAR)
 
-the baryonic Tully–Fisher relation (BTFR)
+The baryonic Tully–Fisher relation (BTFR)
 
-weak-field lensing without dark matter
+Weak-field and cluster lensing without dark matter
 
-cluster-level thermodynamic correlations
+Cluster-scale thermodynamic correlations
 
-harmonic outer-halo structure
+The emergence of a harmonic outer-halo structure
 
-📄 Contents
+Repository Structure
 
-main_merged.tex — LaTeX source for Paper 1
+Paper_1/
+main_merged.tex (LaTeX source)
+main.pdf (compiled version, if included)
+figures/ (optional)
+LICENSE
+zenodo.json
 
-LICENSE — CC-BY 4.0
+Paper_2/
+Source files and supporting materials for the sequel paper
+(mathematical uniqueness, field equations, and cosmology)
 
-zenodo.json — Zenodo metadata
+Derivations/
+High-level analytical derivations (index only; files released gradually)
 
-README.md — This file
+Solvers/
+Numerical tools and mapping scripts (index only; files released gradually)
 
-main.pdf (optional; add if included)
+README.md
+This file
 
-📘 Project Overview
+Project Overview
 
-Coherence Gravity proposes that the classicality of matter—quantified through decoherence—determines its effective gravitational sourcing in the weak-field regime. Fully decohered matter sources standard Einstein gravity, while partially coherent systems contribute a supplementary potential term scaling as 
-1
-/
-𝑟
-1/r.
+Coherence Gravity proposes that gravitational strength depends on the classicality of matter itself.
+Decohered matter gravitates normally.
+Partially coherent systems acquire an additional effective potential proportional to 1/r.
 
-This framework unifies several long-standing astrophysical phenomena without invoking nonbaryonic dark matter or a fundamental cosmological constant.
+This single modification unifies several long-standing astrophysical phenomena without introducing:
 
-Future work will explore:
+Nonbaryonic dark matter
 
-mathematical uniqueness of the coherence correction (Paper 2)
+Interpolating functions
 
-cluster dynamics and lensing
+New particles
 
-cosmology under coherence-weighted sourcing
+Screening mechanisms
 
-large-scale structure implications
+A fundamental cosmological constant
 
-🛠️ Reproducibility
+Future work explores:
+
+Mathematical uniqueness proofs (Paper 2)
+
+Cluster dynamics and lensing
+
+Cosmological evolution under coherence-weighted sourcing
+
+Large-scale structure predictions
+
+Observable signatures distinguishing Coherence Gravity from ΛCDM
+
+Reproducibility
 
 To compile the LaTeX source:
 
@@ -67,40 +84,52 @@ bibtex main_merged
 pdflatex main_merged.tex
 pdflatex main_merged.tex
 
-All materials required for reproducibility are included.
+All files necessary for reproducibility are included in the Paper_1 folder.
 
-🤝 Acknowledgements
+Acknowledgements
 
-Special thanks to Amanda Farley for her support, patience, and inspiration throughout this work.
-Assistance from ChatGPT (OpenAI) contributed to analysis, discussion, and refinement of the manuscript.
+Special thanks to Amanda Farley for support, insight, and patience throughout this project.
 
-Any remaining errors are fully the author's responsibility.
+ChatGPT (OpenAI) contributed to discussion, organization, and refinement.
+All final scientific responsibility rests with the author.
 
-💖 Support This Research
+Support This Research
 
 This project is independently funded.
+If you would like to support continued research, numerical work, or future publications, you may do so here:
 
-If you would like to support continued development — including numerical experiments, open-source tools, follow-up publications, and future Coherence Gravity work — you may do so through GitHub Sponsors:
-
+GitHub Sponsors:
 https://github.com/sponsors/bigredmutt-bit
 
-Your support is greatly appreciated.
+Direct support:
+Venmo: https://venmo.com/u/Clifford-Treadwell
 
-🔗 Related Links
+PayPal: https://paypal.me/CliffordTreadwell78
 
-Zenodo DOI: https://doi.org/10.5281/zenodo.17675790
+Your support is deeply appreciated.
 
-📬 Contact
+Related Links
 
-For collaboration, discussion, or endorsement inquiries (e.g., arXiv), please reach out through:
+Zenodo (Paper 1):
+https://doi.org/10.5281/zenodo.17675790
+
+Zenodo (Paper 2):
+https://doi.org/10.5281/zenodo.17715831
+
+Website (GitHub Pages):
+https://bigredmutt-bit.github.io/coherence-gravity/
+
+Contact
+
+For collaboration, discussion, or arXiv endorsement requests:
 
 GitHub Issues
-
 GitHub Discussions
 
-Your email stays private unless you choose otherwise.
+Email (private unless disclosed):
+bigredmutt@gmail.com
 
-📄 License
+License
 
 This project is released under the Creative Commons Attribution 4.0 (CC-BY 4.0) license.
-You are free to share, modify, and build upon this work with attribution.
+You are free to share, adapt, and build upon this work with appropriate attribution.
