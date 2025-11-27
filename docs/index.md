@@ -1,111 +1,117 @@
 ---
-title: Coherence-Field Gravity
+title: Coherence–Field Gravity
+description: A covariant decoherence-weighted extension of General Relativity
 ---
 
-# Coherence-Field Gravity  
-### A Scalar-Field Alternative to Dark Matter and Dark Energy  
-**Clifford Treadwell**
+# Coherence–Field Gravity (CFG)
+### A Covariant Decoherence-Weighted Extension of General Relativity
 
----
-
-## Overview
-
-This project collects the source files, derivations, and supporting material for a new
-scalar–field extension of gravity in which a single **coherence field** \(C(x)\) responds
-nonlinearly to the trace of the baryonic stress–energy tensor.
-
-The framework replaces particulate dark matter and a finely tuned cosmological constant
-with the dynamics of one covariant scalar field:
-
-- Canonical kinetic term  
-- Quartic-gradient interaction  
-- Shallow potential \(V(C)\)  
-- Environment-sensitive coupling to the trace of \(T_{\mu\nu}\)
-
-From this minimal Lagrangian, the model reproduces:
-
-- MOND-like galactic dynamics and the baryonic Tully–Fisher relation  
-- Cluster-scale “effective halos” matching X-ray, SZ, and lensing data  
-- Cosmic acceleration without a cosmological constant  
-- Early-time radiation-like behavior that preserves CMB peak structure  
+**Author:** Clifford Treadwell  
+**Code & Papers:** [GitHub Repository](https://github.com/bigredmutt-bit/coherence-gravity)  
+**Preprints:** Zenodo (search for “Coherence–Field Gravity” under author *Treadwell, Clifford*)
 
 ---
 
-## Papers
+## What Is Coherence–Field Gravity?
 
-### Paper 1 — Decoherence-Weighted Gravity
+Coherence–Field Gravity (CFG) is a scalar–tensor extension of General Relativity in which **gravitational strength responds to the local degree of quantum decoherence**.
 
-**Coherence Gravity: A Covariant Decoherence-Weighted Extension of General Relativity**  
-Repository: this repo (`main_merged.tex`, etc.)  
-Zenodo: [10.5281/zenodo.17675789](https://doi.org/10.5281/zenodo.17675789)
+- Fully decohered (classical) matter gravitates as in GR.  
+- Partially coherent systems source an additional long-range scalar field.  
+- In the outer-halo regime this field produces a universal \(A/r\) acceleration term, yielding flat rotation curves and the observed scaling relations.
 
-This paper introduces a scalar–tensor extension of GR where gravitational strength
-depends on local decoherence, recovering Einstein gravity in classical regimes while
-avoiding dark-matter halos.
+CFG recovers standard GR in the appropriate limit and explains a wide range of galactic, cluster, and cosmological phenomena **without**:
 
----
-
-### Paper 2 — Coherence-Field Gravity
-
-**Coherence-Field Gravity: A Scalar-Field Alternative to Dark Matter and Dark Energy**  
-Zenodo: [10.5281/zenodo.17715831](https://doi.org/10.5281/zenodo.17715831)
-
-A single scalar degree of freedom, governed by a quartic-gradient Lagrangian and a
-soft potential, accounts for:
-
-- Flat rotation curves and SPARC mass–acceleration data via a nonlinear scalar flux law  
-- Cluster-scale mass discrepancies through a scalar-induced effective halo  
-- Late-time cosmic acceleration from slow roll of the coherence field  
-- Early-time suppression of vacuum energy when the quartic term dominates  
-
-The acceleration scale \(a_0 \sim 10^{-12}\,\mathrm{m\,s^{-2}}\) is **not inserted by hand**;
-it emerges from the same parameters \((\Lambda_4, f)\) that control galactic and
-cosmological behavior.
+- particulate dark matter halos,  
+- interpolating functions,  
+- screening mechanisms, or  
+- a fundamental cosmological constant.
 
 ---
 
-## Code and Data
+## The Coherence–Field Gravity Paper Suite
 
-GitHub repository:  
-**Coherence Gravity** – <https://github.com/bigredmutt-bit/coherence-gravity>
+The research program is documented as an 11-paper preprint series on Zenodo:
 
-Contents include:
+1. **Coherence–Field Gravity: A Scalar-Field Alternative to Dark Matter and Dark Energy**  
+   Core scalar–field framework, action, field equations, and galactic phenomenology.
 
-- LaTeX sources for both papers  
-- SPARC-fitting scripts and solver outputs  
-- Mapping between numerical B2/D2 units and physical parameters  
-- Zenodo metadata (`zenodo.json`)
+2. **Coherence–Field Gravity Research Program: Overview, Structure, and Roadmap**  
+   High-level summary of the full program, goals, and planned tests.
 
-Zenodo archive for Paper 2 (PDF + source bundle):  
-<https://doi.org/10.5281/zenodo.17715831>
+3. **Large-Scale Structure in Coherence–Field Gravity: Linear Growth, Matter Power Spectrum, and BAO Stability**  
+   Linear perturbation theory, matter power spectrum, and BAO behavior.
+
+4. **Gravitational Waves in Coherence–Field Gravity: Propagation, Dispersion, and Observational Signatures**  
+   GW propagation in the coherence field and constraints from current/future detectors.
+
+5. **Cosmology of Coherence–Field Gravity: FRW Dynamics, Late-Time Acceleration, and Structure Growth**  
+   Modified Friedmann equations, effective dark energy, and growth of structure.
+
+6. **Vacuum Energy Suppression in Coherence–Field Gravity: Decoherence Weighting and the Cosmological Hierarchy**  
+   How decoherence-weighted sourcing suppresses vacuum energy and addresses the hierarchy.
+
+7. **Falsifiable Predictions of Coherence–Field Gravity: A Clear Experimental and Observational Test Suite**  
+   Concrete, near- and medium-term tests that can confirm or rule out CFG.
+
+8. **Observational Predictions of Coherence–Field Gravity: Galaxies, Clusters, and the Ultra-Weak Regime**  
+   Rotation curves, clusters, lensing, and the universal ultra-weak acceleration term.
+
+9. **Numerical Evolution of the Coherence Field: Methods, Stability, and SPARC Validation**  
+   Numerical scheme, stability analysis, and galaxy fits against SPARC data.
+
+10. **Coherence Through Conversation: A Case Study in Human–AI Scientific Co-Discovery**  
+    Methodology paper documenting the human–AI workflow that produced the CFG program.
+
+11. **Coherence–Field Gravity Research Program (Combined Overview / Roadmap Preprint)**  
+    A compact overview tying together the full theoretical, numerical, and observational picture.
+
+> 📎 For DOIs and downloads, see the **Zenodo listing** under *Treadwell, Clifford* or search for “Coherence–Field Gravity”.
 
 ---
 
-## How to Cite
+## Repository & Derivations
 
-If you use this work, please cite **Paper 2** as the main reference for the
-coherence-field framework:
+All source and supporting material live in the public GitHub repository:
 
-> C. Treadwell, *Coherence-Field Gravity: A Scalar-Field Alternative to Dark Matter and Dark Energy*, Zenodo (2025), doi:10.5281/zenodo.17715831.
+- 📦 **Repo:** [github.com/bigredmutt-bit/coherence-gravity](https://github.com/bigredmutt-bit/coherence-gravity)  
 
-and **Paper 1** for the earlier decoherence-weighted formulation:
+Key components:
 
-> C. Treadwell, *Coherence Gravity: A Covariant Decoherence-Weighted Extension of General Relativity*, Zenodo (2025), doi:10.5281/zenodo.17675789.
-
-(BibTeX entries can be copied directly from the Zenodo pages.)
-
----
-
-## Contact
-
-Questions, comments, or collaboration inquiries:
-
-- **Email:** `bigredmutt@gmail.com`  
-- **GitHub:** [@bigredmutt-bit](https://github.com/bigredmutt-bit)
+- `paper_1/`, `paper_2/`, … `paper_11/` — LaTeX sources and PDFs for each paper  
+- `derivations/` — detailed analytic notes (e.g. inevitability of the \(1/r\) term, transition radius, mass scale \(M_0\), etc.)  
+- `solvers/` — numerical tools, SPARC mapping scripts, and large-scale structure scans (released progressively)  
+- `docs/` — workflow and methodology material, including the human–AI co-discovery case study
 
 ---
 
-## Support
+## Why CFG Matters
 
-GitHub Sponsors and other support links will be added here once available.
-For now, watching or starring the repository helps others discover the work.
+CFG suggests that:
+
+- **Gravitation is sensitive to classicality**, not just mass-energy.  
+- The familiar “missing mass” phenomena may instead reflect an emergent scalar response of spacetime to decoherence.  
+- A single mass scale \(M_0\) and a universal \(A/r\) term can explain:
+  - flat rotation curves,  
+  - BTFR,  
+  - RAR,  
+  - cluster dynamics, and  
+  - aspects of late-time cosmic acceleration.
+
+The program is intentionally structured to be **falsifiable**. Paper 7 outlines specific observational and experimental checks capable of confirming or ruling out the framework.
+
+---
+
+## Reproducibility
+
+Most papers can be rebuilt directly from the repository:
+
+```bash
+git clone https://github.com/bigredmutt-bit/coherence-gravity.git
+cd coherence-gravity/paper_1
+
+pdflatex main_merged.tex
+bibtex main_merged
+pdflatex main_merged.tex
+pdflatex main_merged.tex
+
