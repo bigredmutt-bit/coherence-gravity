@@ -1,8 +1,3 @@
----
-title: Coherence–Field Gravity
-description: A covariant decoherence-weighted extension of General Relativity
----
-
 # Coherence–Field Gravity (CFG)
 ### A Covariant Decoherence-Weighted Extension of General Relativity
 
@@ -52,7 +47,7 @@ The research program is documented as an 11-paper preprint series on Zenodo:
    How decoherence-weighted sourcing suppresses vacuum energy and addresses the hierarchy.
 
 7. **Falsifiable Predictions of Coherence–Field Gravity: A Clear Experimental and Observational Test Suite**  
-   Concrete, near- and medium-term tests that can confirm or rule out CFG.
+   Concrete near- and medium-term tests that can confirm or rule out CFG.
 
 8. **Observational Predictions of Coherence–Field Gravity: Galaxies, Clusters, and the Ultra-Weak Regime**  
    Rotation curves, clusters, lensing, and the universal ultra-weak acceleration term.
@@ -66,7 +61,7 @@ The research program is documented as an 11-paper preprint series on Zenodo:
 11. **Coherence–Field Gravity Research Program (Combined Overview / Roadmap Preprint)**  
     A compact overview tying together the full theoretical, numerical, and observational picture.
 
-> 📎 For DOIs and downloads, see the **Zenodo listing** under *Treadwell, Clifford* or search for “Coherence–Field Gravity”.
+> 📎 For DOIs and downloads, see the Zenodo listing under *Treadwell, Clifford* or search for **“Coherence–Field Gravity”**.
 
 ---
 
@@ -74,7 +69,7 @@ The research program is documented as an 11-paper preprint series on Zenodo:
 
 All source and supporting material live in the public GitHub repository:
 
-- 📦 **Repo:** [github.com/bigredmutt-bit/coherence-gravity](https://github.com/bigredmutt-bit/coherence-gravity)  
+- 📦 **Repo:** <https://github.com/bigredmutt-bit/coherence-gravity>
 
 Key components:
 
@@ -89,7 +84,7 @@ Key components:
 
 CFG suggests that:
 
-- **Gravitation is sensitive to classicality**, not just mass-energy.  
+- Gravitation is sensitive to **classicality**, not just mass–energy.  
 - The familiar “missing mass” phenomena may instead reflect an emergent scalar response of spacetime to decoherence.  
 - A single mass scale \(M_0\) and a universal \(A/r\) term can explain:
   - flat rotation curves,  
