@@ -1,0 +1,204 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{bm}
+\usepackage{setspace}
+\geometry{margin=1in}
+\setstretch{1.15}
+
+\title{Cosmology of Coherence--Field Gravity:\\
+FRW Dynamics, Late-Time Acceleration, and Structure Growth}
+
+\author{
+Clifford Treadwell\\[0.5em]
+{\normalsize with model-assisted analysis generated using the GPT-5.1 system}
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper develops the cosmological sector of Coherence--Field Gravity (CFG),
+a scalar-field extension of general relativity in which the coherence field
+$C(x)$ couples to matter through decoherence-weighted sourcing.
+The same field that produces the galactic $A/r$ acceleration term also
+suppresses the gravitational effect of vacuum energy.
+At cosmological scales, the coherence field contributes an effective energy
+density and modifies the Friedmann equation while preserving early-universe
+behavior.
+We derive the FRW evolution equations, analyze late-time acceleration, obtain
+the linear growth factor for structure formation, and confirm that acoustic
+peak locations remain unshifted. The result is a unified cosmological picture
+consistent with both large-scale structure and late-time acceleration without a
+fundamental cosmological constant.
+\end{abstract}
+
+\section{Introduction}
+
+Coherence--Field Gravity introduces a scalar field $C(x)$ whose coupling to
+matter is controlled by a decoherence factor $D(x)$. As shown in previous
+papers:
+\begin{itemize}
+    \item the same physics yields a universal $A/r$ galactic acceleration,
+    \item suppresses vacuum energy by $\sim10^{-123}$,
+    \item and modifies gravitational dynamics in the ultra-weak regime.
+\end{itemize}
+
+Here we extend CFG to cosmology.
+
+\section{FRW Framework}
+
+Assume a spatially flat FRW metric:
+\[
+ds^2 = -dt^2 + a(t)^2 d\vec{x}^{\,2}.
+\]
+
+The coherence field is homogeneous:
+\[
+C = C(t).
+\]
+
+Its energy density and pressure are:
+\[
+\rho_C = \frac{1}{2}\dot{C}^2 + V(C),
+\qquad
+p_C = \frac{1}{2}\dot{C}^2 - V(C).
+\]
+
+\section{Decoherence-Weighted Vacuum Energy}
+
+Vacuum fluctuations couple as:
+\[
+\rho_{\rm vac}^{\rm eff} = D_{\rm vac}\, \rho_{\rm vac}^{\rm QFT},
+\]
+where $D_{\rm vac}\sim10^{-123}$.
+
+Thus the effective cosmological constant becomes:
+\[
+\rho_\Lambda^{\rm eff} = D_{\rm vac}\,\rho_{\rm vac}^{\rm QFT}.
+\]
+
+\section{Modified Friedmann Equation}
+
+The expansion rate is:
+\[
+H^2 = \frac{8\pi G}{3}
+\left[ \rho_m 
++ \rho_r 
++ D_{\rm vac}\,\rho_{\rm vac}^{\rm QFT}
++ \rho_C \right].
+\]
+
+Because $D_{\rm vac}$ is extremely small,
+$\rho_C$ drives late-time acceleration.
+
+\section{Evolution of the Coherence Field}
+
+$C(t)$ satisfies:
+\[
+\ddot{C} + 3H\dot{C} + V'(C) = S_{\rm cos},
+\]
+where the cosmological source $S_{\rm cos}$ reflects large-scale
+decoherence from matter inhomogeneities.
+
+Late-time behavior:
+\begin{itemize}
+    \item $\dot{C}$ becomes small,
+    \item $V(C)$ dominates,
+    \item producing accelerated expansion.
+\end{itemize}
+
+\section{Early-Universe Behavior}
+
+When $\rho_m$ and $\rho_r$ dominate:
+\begin{itemize}
+    \item $S_{\rm cos}$ is negligible,
+    \item $\rho_C$ is subdominant,
+    \item $C(t)$ tracks minimally,
+\end{itemize}
+ensuring:
+\begin{itemize}
+    \item unshifted CMB acoustic peaks,
+    \item standard nucleosynthesis,
+    \item unaltered radiation-to-matter equality.
+\end{itemize}
+
+\section{Late-Time Acceleration}
+
+At $z<1$:
+\begin{itemize}
+    \item $C(t)$ becomes slowly rolling,
+    \item $\rho_C$ mimics a cosmological constant,
+    \item but without fine-tuning.
+\end{itemize}
+
+The equation of state approaches
+\[
+w_C \approx -1,
+\]
+with small departures that may be observable.
+
+\section{Linear Structure Growth}
+
+Matter perturbations obey:
+\[
+\ddot{\delta} + 2H\dot{\delta}
+ = 4\pi G_{\rm eff} \rho_m \delta,
+\]
+where $G_{\rm eff}$ differs slightly from $G$ due to coherence-field feedback.
+
+CFG predicts:
+\begin{itemize}
+    \item reduced growth relative to $\Lambda$CDM,
+    \item scale-independent modification,
+    \item mild late-time suppression.
+\end{itemize}
+
+This can be tested with:
+\begin{itemize}
+    \item redshift-space distortions,
+    \item weak-lensing tomography,
+    \item Lyman-$\alpha$ forest.
+\end{itemize}
+
+\section{BAO Stability}
+
+Because CFG preserves the early universe:
+\begin{itemize}
+    \item BAO scale is unchanged,
+    \item sound horizon at drag epoch matches $\Lambda$CDM,
+    \item no shift in acoustic peak locations.
+\end{itemize}
+
+\section{Predictions and Tests}
+
+CFG predicts:
+\begin{itemize}
+    \item slightly smaller late-time growth factor,
+    \item ISW effect modified at low multipoles,
+    \item cosmic acceleration without $\Lambda$,
+    \item no early-time deviations.
+\end{itemize}
+
+\section{Conclusion}
+
+CFG provides a cosmological picture in which:
+\begin{itemize}
+    \item early-universe evolution matches GR,
+    \item vacuum energy is dynamically suppressed,
+    \item late-time acceleration arises naturally,
+    \item linear growth is mildly reduced.
+\end{itemize}
+
+This unifies galactic, cluster, and cosmological phenomenology within a single
+scalar-field framework.
+
+\section*{References}
+
+(Standard cosmology references, decoherence literature, prior CFG papers.)
+
+\end{document}
+

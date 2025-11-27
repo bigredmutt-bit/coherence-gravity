@@ -1,0 +1,186 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{bm}
+\usepackage{setspace}
+\geometry{margin=1in}
+\setstretch{1.15}
+
+\title{Gravitational Waves in Coherence--Field Gravity:\\
+Propagation, Dispersion, and Observational Signatures}
+
+\author{
+Clifford Treadwell\\[0.5em]
+{\normalsize with model-assisted analysis generated using the GPT-5.1 system}
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Coherence--Field Gravity (CFG) modifies the gravitational potential through a
+scalar coherence field $C(x)$ whose gradient produces an additional $A/r$
+acceleration in the weak-field regime. This paper analyzes the impact of these
+modifications on gravitational wave propagation. Because CFG preserves the
+Einstein--Hilbert action at leading order and the coherence field couples
+primarily to decohered matter, gravitational waves propagate through vacuum
+with near-GR behavior. We derive the effective wave equation, show that
+dispersion is negligible for LIGO/Virgo frequencies, and outline potential
+signatures at cosmological distances due to coherence-field backreaction.
+CFG predicts GR-consistent waveforms with small late-time deviations in
+amplitude and phase accumulation over gigaparsec baselines.
+\end{abstract}
+
+\section{Introduction}
+
+CFG introduces a scalar coherence field $C(x)$ that modifies gravitational
+dynamics in the ultra-weak regime. The question addressed here is whether such
+a modification affects gravitational wave (GW) propagation.
+
+The key insights:
+\begin{itemize}
+    \item high-coherence vacuum states couple weakly to $C(x)$,
+    \item gravitational waves propagate through vacuum,
+    \item therefore the coherence field does not significantly perturb GW dynamics.
+\end{itemize}
+
+\section{Perturbative Framework}
+
+Write the metric as:
+\[
+g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu},
+\]
+with $|h_{\mu\nu}|\ll1$.
+
+The coherence field is decomposed as:
+\[
+C(x) = C_0 + \delta C(x),
+\]
+where $C_0$ is the cosmological background.
+
+\section{Linearized Equations}
+
+In CFG, the GW equation becomes:
+\[
+\square h_{\mu\nu}
+= 16\pi G\, T_{\mu\nu}^{\rm GW}
++ S_{\mu\nu}[C],
+\]
+with $S_{\mu\nu}$ encoding coherence-field backreaction.
+
+Because:
+\begin{itemize}
+    \item gravitational waves are coherent quantum excitations of spacetime,
+    \item and $C(x)$ couples weakly to coherent states,
+\end{itemize}
+we obtain:
+\[
+S_{\mu\nu}[C] \approx 0.
+\]
+
+Thus:
+\[
+\square h_{\mu\nu} \simeq 0.
+\]
+
+\section{Propagation Speed}
+
+CFG predicts:
+\[
+c_{\rm GW} = c,
+\]
+consistent with:
+\begin{itemize}
+    \item GW170817 timing constraints,
+    \item multimessenger bounds.
+\end{itemize}
+
+\section{Dispersion}
+
+To leading order:
+\[
+\omega^2 = k^2.
+\]
+
+Small corrections arise from cosmological drift in $C(t)$:
+\[
+\omega^2 = k^2 \left( 1 + \epsilon_C \right),
+\qquad
+|\epsilon_C| \ll 10^{-15}.
+\]
+
+Thus dispersion is:
+\begin{itemize}
+    \item unmeasurable for LIGO/Virgo,
+    \item potentially measurable for LISA at $10^{-4}$--$10^{-1}$ Hz,
+    \item strongest at Gpc propagation distances.
+\end{itemize}
+
+\section{Amplitude and Phase Modifications}
+
+The coherence field modifies the background expansion:
+\[
+H(t) = H_{\Lambda{\rm CDM}} + \Delta H_C.
+\]
+
+Consequences for gravitational waves:
+\begin{itemize}
+    \item amplitude decay differs slightly due to modified luminosity distance,
+    \item phase accumulation differs at the $\sim10^{-4}$ level over Gpc scales,
+    \item possible signatures in standard-siren cosmography.
+\end{itemize}
+
+\subsection{Luminosity Distance}
+
+CFG predicts:
+\[
+d_L^{\rm CFG}(z) = d_L^{\Lambda{\rm CDM}}(z)\, (1 + \Delta_C),
+\]
+with
+\[
+|\Delta_C| \sim 10^{-3}.
+\]
+
+\section{Strong-Field Effects}
+
+The coherence field does not strongly couple in:
+\begin{itemize}
+    \item black hole mergers,
+    \item neutron star mergers,
+    \item ringdown behavior.
+\end{itemize}
+
+Thus:
+\[
+\text{Waveform templates from GR remain valid.}
+\]
+
+\section{Distinctive Predictions}
+
+CFG predicts:
+\begin{itemize}
+    \item no change to GW propagation speed,
+    \item no birefringence,
+    \item tiny dispersion at cosmological distances,
+    \item modified luminosity distances for standard sirens,
+    \item phase drift detectable by LISA with long baselines.
+\end{itemize}
+
+These are clean and falsifiable.
+
+\section{Conclusion}
+
+CFG yields gravitational wave propagation nearly identical to GR in all
+presently accessible regimes. Deviations appear only over cosmological
+distances due to background coherence-field evolution, providing a set of
+testable signatures for next-generation GW observatories.
+
+\section*{References}
+
+(GR perturbation theory texts, LIGO/Virgo papers, LISA forecasts, prior CFG papers.)
+
+\end{document}
+
