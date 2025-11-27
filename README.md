@@ -1,135 +1,75 @@
-Coherence Gravity
+# 📘 Coherence–Field Gravity (CFG)
+### A Covariant Decoherence-Weighted Extension of General Relativity
 
-A Covariant Decoherence-Weighted Extension of General Relativity
+This repository contains the full source tree, derivations, numerical tools, and supporting materials for the **Coherence–Field Gravity (CFG)** research program.
 
-This repository contains all source files, metadata, and supporting materials for the paper:
+CFG is a scalar–tensor extension of General Relativity in which gravitational strength depends on the **local degree of quantum decoherence**. Fully decohered matter gravitates as in GR, while partially coherent systems source an additional long-range scalar potential with a universal \(1/r\) acceleration term in the ultra-weak regime.
 
-Coherence Gravity: A Covariant Decoherence-Weighted Extension of General Relativity
-DOI: https://doi.org/10.5281/zenodo.17675790
+The framework reproduces and unifies a wide range of galactic, cluster, and cosmological phenomena **without dark matter halos**, new particles, screening mechanisms, or interpolating functions.
 
-Coherence Gravity introduces a covariant scalar–tensor framework in which gravitational strength responds to the local degree of quantum decoherence. The theory produces a universal long-range 1/r correction in the ultra-weak regime, while smoothly recovering standard General Relativity for decohered matter.
+---
 
-This framework naturally explains:
+## 📚 Coherence–Field Gravity Paper Suite (Zenodo)
 
-Flat galactic rotation curves
+The research program is documented as an 11-paper preprint series on Zenodo:
 
-The radial acceleration relation (RAR)
+1. **Coherence–Field Gravity: A Scalar-Field Alternative to Dark Matter and Dark Energy**  
+2. **Coherence–Field Gravity Research Program: Overview, Structure, and Roadmap**  
+3. **Large-Scale Structure in Coherence–Field Gravity: Linear Growth, Matter Power Spectrum, and BAO Stability**  
+4. **Gravitational Waves in Coherence–Field Gravity: Propagation, Dispersion, and Observational Signatures**  
+5. **Cosmology of Coherence–Field Gravity: FRW Dynamics, Late-Time Acceleration, and Structure Growth**  
+6. **Vacuum Energy Suppression in Coherence–Field Gravity: Decoherence Weighting and the Cosmological Hierarchy**  
+7. **Falsifiable Predictions of Coherence–Field Gravity: A Clear Experimental and Observational Test Suite**  
+8. **Observational Predictions of Coherence–Field Gravity: Galaxies, Clusters, and the Ultra-Weak Regime**  
+9. **Numerical Evolution of the Coherence Field: Methods, Stability, and SPARC Validation**  
+10. **Coherence Through Conversation: A Case Study in Human–AI Scientific Co-Discovery**  
+11. **Coherence–Field Gravity Research Program (combined overview + roadmap preprint)**
 
-The baryonic Tully–Fisher relation (BTFR)
+> 🔗 **Zenodo collection:** see your Zenodo profile / search for “Coherence–Field Gravity” for the full, DOI-linked list of all papers.
 
-Weak-field and cluster lensing without dark matter
+Explicit DOIs (from Zenodo):
 
-Cluster-scale thermodynamic correlations
+- Paper 1 Core Theory: **Coherence Gravity: A Covariant Decoherence-Weighted Extension of GR**  
+  **DOI:** https://doi.org/10.5281/zenodo.17675790  
 
-The emergence of a harmonic outer-halo structure
+- Paper 2 Uniqueness + Cosmology:  
+  **DOI:** https://doi.org/10.5281/zenodo.17715831  
 
-Repository Structure
+- Case Study / Methodology (Human–AI Co-Discovery):  
+  **DOI:** https://doi.org/10.5281/zenodo.17729096  
 
-Paper_1/
-main_merged.tex (LaTeX source)
-main.pdf (compiled version, if included)
-figures/ (optional)
-LICENSE
-zenodo.json
+---
 
-Paper_2/
-Source files and supporting materials for the sequel paper
-(mathematical uniqueness, field equations, and cosmology)
+## 📂 Repository Structure
 
-Derivations/
-High-level analytical derivations (index only; files released gradually)
+```text
+coherence-gravity/
+│
+├── paper_1/                # Core theory: scalar–tensor action, field eqns, galaxy phenomenology
+│   ├── main_merged.tex
+│   ├── main.pdf
+│   └── figures/
+│
+├── paper_2/                # Mathematical uniqueness + cosmological sector
+│   ├── main_merged.tex
+│   └── main.pdf
+│
+├── paper_3_to_10/          # Optional: per-paper folders if/when you add them
+│   └── ...
+│
+├── derivations/            # Analytic derivation notes (01–…)
+│   ├── 01_inevitable_1_over_r_term.tex
+│   ├── 02_transition_radius_030_kpc.tex
+│   ├── 03_why_decoherence_weighting_must_exist.tex
+│   └── ...
+│
+├── solvers/                # Numerical tools, SPARC mapping, LSS scans (released progressively)
+│   └── ...
+│
+├── docs/                   # Methodology and workflow (human–AI case study, PDFs, guides)
+│   └── coherence_through_conversation.pdf
+│
+├── zenodo.json             # Metadata for Zenodo deposition
+├── LICENSE
+└── README.md               # You are here
 
-Solvers/
-Numerical tools and mapping scripts (index only; files released gradually)
-
-README.md
-This file
-
-Project Overview
-
-Coherence Gravity proposes that gravitational strength depends on the classicality of matter itself.
-Decohered matter gravitates normally.
-Partially coherent systems acquire an additional effective potential proportional to 1/r.
-
-This single modification unifies several long-standing astrophysical phenomena without introducing:
-
-Nonbaryonic dark matter
-
-Interpolating functions
-
-New particles
-
-Screening mechanisms
-
-A fundamental cosmological constant
-
-Future work explores:
-
-Mathematical uniqueness proofs (Paper 2)
-
-Cluster dynamics and lensing
-
-Cosmological evolution under coherence-weighted sourcing
-
-Large-scale structure predictions
-
-Observable signatures distinguishing Coherence Gravity from ΛCDM
-
-Reproducibility
-
-To compile the LaTeX source:
-
-pdflatex main_merged.tex
-bibtex main_merged
-pdflatex main_merged.tex
-pdflatex main_merged.tex
-
-All files necessary for reproducibility are included in the Paper_1 folder.
-
-Acknowledgements
-
-Special thanks to Amanda Farley for support, insight, and patience throughout this project.
-
-ChatGPT (OpenAI) contributed to discussion, organization, and refinement.
-All final scientific responsibility rests with the author.
-
-Support This Research
-
-This project is independently funded.
-If you would like to support continued research, numerical work, or future publications, you may do so here:
-
-GitHub Sponsors:
-https://github.com/sponsors/bigredmutt-bit
-
-Direct support:
-Venmo: https://venmo.com/u/Clifford-Treadwell
-
-PayPal: https://paypal.me/CliffordTreadwell78
-
-Your support is deeply appreciated.
-
-Related Links
-
-Zenodo (Paper 1):
-https://doi.org/10.5281/zenodo.17675790
-
-Zenodo (Paper 2):
-https://doi.org/10.5281/zenodo.17715831
-
-Website (GitHub Pages):
-https://bigredmutt-bit.github.io/coherence-gravity/
-
-Contact
-
-For collaboration, discussion, or arXiv endorsement requests:
-
-GitHub Issues
-GitHub Discussions
-
-Email (private unless disclosed):
-bigredmutt@gmail.com
-
-License
-
-This project is released under the Creative Commons Attribution 4.0 (CC-BY 4.0) license.
-You are free to share, adapt, and build upon this work with appropriate attribution.
